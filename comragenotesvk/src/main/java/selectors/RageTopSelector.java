@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 
-public class RageTopSelecter {
+public class RageTopSelector implements TopSelector<RageServerEntity> {
     public List<RageServerEntity> selectTop(List<RageServerEntity> servers, Comparator<RageServerEntity> comparator, int count) {
         if(count <= 0) throw new IllegalArgumentException("can not select 0 or less elements");
 

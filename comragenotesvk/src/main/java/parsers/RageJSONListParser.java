@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class RageJSONListParser {
+public class RageJSONListParser implements JSONListParser<RageServerEntity> {
     private final Gson gson = new Gson();
 
     public List<RageServerEntity> parseList(String jsonString) {
