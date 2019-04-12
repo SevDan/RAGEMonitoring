@@ -1,6 +1,10 @@
 package listentities;
 
-public class RageServerEntity implements Comparable<RageServerEntity> {
+import java.io.Serializable;
+
+public class RageServerEntity implements Comparable<RageServerEntity>, Serializable {
+    private static final long serialVersionUID = 1;
+
     private String fullAddress;
     private RageServerAttributesEntity entity;
 

@@ -1,4 +1,4 @@
-import listentities.RageServerEntity;
+package parsers;
 
 import java.util.List;
 
